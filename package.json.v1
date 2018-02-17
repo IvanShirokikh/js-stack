@@ -1,0 +1,92 @@
+{
+  "name": "logic_game",
+  "version": "1.0.0",
+  "description": "logic game",
+  "main": "index.js",
+  "author": "breakpoint",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "gulp",
+    "test": "gulp test",
+    "precommit": "yarn test",
+    "prepush": "yarn test"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "compression": "^1.7.1",
+    "express": "^4.16.2",
+    "immutable": "^3.8.2",
+    "mocha": "^5.0.0",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-actions": "^2.2.1",
+    "redux-immutable": "^4.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-flow-react-proptypes": "^15.1.0",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "del": "^3.0.0",
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-flowtype": "^2.42.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.6.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-eslint": "^4.0.2",
+    "gulp-flowtype": "^1.0.0",
+    "gulp-mocha": "^5.0.0",
+    "husky": "^0.14.3",
+    "sinon": "^4.2.2",
+    "sinon-chai": "^2.14.0",
+    "webpack": "^3.10.0",
+    "webpack-stream": "^4.0.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "airbnb",
+      "plugin:flowtype/recommended"
+    ],
+    "globals": {
+      "window": true,
+      "document": true
+    },
+    "plugins": [
+      "import",
+      "flowtype"
+    ]
+  },
+  "rules": {
+    "new-cap": [
+      2,
+      {
+        "capIsNewExceptions": [
+          "Map",
+          "List"
+        ]
+      }
+    ]
+  },
+  "babel": {
+    "presets": [
+      "latest",
+      "react",
+      "flow"
+    ]
+  },
+  "env": {
+    "browser": true
+  }
+}
