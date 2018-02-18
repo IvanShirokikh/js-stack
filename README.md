@@ -1,0 +1,2 @@
+[![Build Status](https://img.shields.io/travis/GIvanShirokikh/js-stack.svg?style=flat-square)](https://travis-ci.org/IvanShirokikh/js-stack)
+[![Coverage Status](https://img.shields.io/coveralls/IvanShirokikh/js-stack.svg?style=flat-square)](https://coveralls.io/github/IvanShirokikh/js-stack?branch=master)
